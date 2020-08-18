@@ -108,16 +108,16 @@ ECHO "        __/ |                                                __/ |"
 ECHO "       |___/ APT Simulation Tool by Jacob Archuleta | v0.0.6|___/ "
 ECHO Select:
 ECHO.
-ECHO   [0] Initial Access
+ECHO   [0] Initial-Access
 ECHO   [1] Execution
 ECHO   [2] Persistence
-ECHO   [3] Privilege Escalation
-ECHO   [4] Defense Evasion
-ECHO   [5] Credential Access
+ECHO   [3] Privilege-Escalation
+ECHO   [4] Defense-Evasion
+ECHO   [5] Credential-Access
 ECHO   [6] Discovery
-ECHO   [7] Lateral Movement
+ECHO   [7] Lateral-Movement
 ECHO   [8] Collection
-ECHO   [9] Command & Control
+ECHO   [9] Command-Control
 ECHO   [10] Exfiltration
 ECHO   [E] Exit
 ECHO.
