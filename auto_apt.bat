@@ -93,7 +93,6 @@ GOTO MENU
 :MENU
 CLS
 color 07
-ECHO ====================================================================
 ECHO "  _____        __     _                                           "
 ECHO " / ____|      / _|   | |                                          "
 ECHO "| (___   __ _| |_ ___| | _____  ___ _ __                          "
@@ -106,12 +105,8 @@ ECHO "| |   | | | | '_ \ / _ \ '__/ __|/ _ \/ __| | | | '__| | __| | | |"
 ECHO "| |___| |_| | |_) |  __/ |  \__ \  __/ (__| |_| | |  | | |_| |_| |"
 ECHO " \_____\__, |_.__/ \___|_|  |___/\___|\___|\__,_|_|  |_|\__|\__, |"
 ECHO "        __/ |                                                __/ |"
-ECHO "       |___/                                                |___/ "
-ECHO ====================================================================
-ECHO "APT Simulation Tool, Jacob Archuleta, v0.0.6"
-
-ECHO.
-ECHO Select the technique that you want to run:
+ECHO "       |___/ APT Simulation Tool by Jacob Archuleta | v0.0.6|___/ "
+ECHO Select:
 ECHO.
 ECHO   [0] Initial Access
 ECHO   [1] Execution
