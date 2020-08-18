@@ -93,51 +93,52 @@ GOTO MENU
 :MENU
 CLS
 color 07
-ECHO "  _____        __     _                                           "                                        
-ECHO " / ____|      / _|   | |                                          "                                       
-ECHO "| (___   __ _| |_ ___| | _____  ___ _ __                          "                        
-ECHO " \___ \ / _` |  _/ _ \ |/ / _ \/ _ \ '_ \                         "                       
-ECHO " ____) | (_| | ||  __/   <  __/  __/ |_) |                        "                      
-ECHO "|_____/ \__,_|_| \___|_|\_\___|\___| .__/             _ _         "     
-ECHO " / ____|    | |                    | |               (_) |        "    
+ECHO ====================================================================
+ECHO "  _____        __     _                                           "
+ECHO " / ____|      / _|   | |                                          "
+ECHO "| (___   __ _| |_ ___| | _____  ___ _ __                          "
+ECHO " \___ \ / _` |  _/ _ \ |/ / _ \/ _ \ '_ \                         "
+ECHO " ____) | (_| | ||  __/   <  __/  __/ |_) |                        "
+ECHO "|_____/ \__,_|_| \___|_|\_\___|\___| .__/             _ _         "
+ECHO " / ____|    | |                    | |               (_) |        "
 ECHO "| |    _   _| |__   ___ _ __ ___  _|_| ___ _   _ _ __ _| |_ _   _ "
 ECHO "| |   | | | | '_ \ / _ \ '__/ __|/ _ \/ __| | | | '__| | __| | | |"
 ECHO "| |___| |_| | |_) |  __/ |  \__ \  __/ (__| |_| | |  | | |_| |_| |"
 ECHO " \_____\__, |_.__/ \___|_|  |___/\___|\___|\__,_|_|  |_|\__|\__, |"
 ECHO "        __/ |                                                __/ |"
 ECHO "       |___/                                                |___/ "
+ECHO ====================================================================
 ECHO "APT Simulation Tool, Jacob Archuleta, v0.0.6"
 
 ECHO.
 ECHO Select the technique that you want to run:
 ECHO.
+ECHO   [0] Initial Access
 ECHO   [1] Execution
 ECHO   [2] Persistence
-ECHO   [3] Command and Control
-ECHO   [4] Discovery
-ECHO   [5] Privilege Escalation
-ECHO   [6] Credential Access
+ECHO   [3] Privilege Escalation
+ECHO   [4] Defense Evasion
+ECHO   [5] Credential Access
+ECHO   [6] Discovery
 ECHO   [7] Lateral Movement
 ECHO   [8] Collection
-ECHO   [9] Defense Evasion
-ECHO   [0] Exfiltration
+ECHO   [9] Command & Control
+ECHO   [10] Exfiltration
+ECHO   [E] Exit
 ECHO.
 
 SET /P M=Your selection (then press ENTER):
-IF %M%==0 SET list="exfiltration"
+IF %M%==0 SET list="initial-access"
+IF %M%==10 SET list="exfiltration"
 IF %M%==8 SET list="collection"
-IF %M%==3 SET list="command-and-control"
-IF %M%==6 SET list="credential-access"
-IF %M%==9 SET list="defense-evasion"
-IF %M%==4 SET list="discovery"
+IF %M%==9 SET list="command-and-control"
+IF %M%==5 SET list="credential-access"
+IF %M%==4 SET list="defense-evasion"
+IF %M%==6 SET list="discovery"
 IF %M%==1 SET list="execution"
 IF %M%==7 SET list="lateral-movement"
 IF %M%==2 SET list="persistence"
-IF %M%==5 SET list="privilege-escalation"
-IF %M%==s GOTO SETTINGS
-IF %M%==S GOTO SETTINGS
-IF %M%==a GOTO AVEXCLUDER
-IF %M%==A GOTO AVEXCLUDER
+IF %M%==3 SET list="privilege-escalation"
 IF %M%==e GOTO END
 IF %M%==E GOTO END
 
