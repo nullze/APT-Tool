@@ -98,7 +98,7 @@ ECHO "   / __|\ \ / /| |   | __| / __||_   _|       |_ _| / _ \ "
 ECHO "  | (__  \   / | |__ | _| | (__   | |    _     | | | (_) | "
 ECHO "   \___|  |_|  |____||___| \___|  |_|   (_)   |___| \___/ "
 ECHO ""
-ECHO "APT Simulation Tool by Jacob Archuleta | v0.0.7"
+ECHO "APT Simulation Tool by Nullze (Jake A.) | v0.0.7"
 ECHO Select:
 ECHO.
 ECHO   [0] Initial-Access
